@@ -15,8 +15,12 @@ body{
 
 }
 
-h2,.white{
+h2{
     color: #fff;
+}
+
+.white{
+    color: lightgray;
 }
 
 a{
