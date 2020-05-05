@@ -96,9 +96,15 @@ a{
     position: relative;
     padding-left: 10px;
 }
-
+hr#hr-mobile {
+    display: none;
+}
 /* media queres */
 @media(max-width:780px){
+    hr#hr-mobile {
+        margin-bottom: 2rem;
+        display: block;
+    }
     .grid-2{
         grid-template-columns: 1fr;
     }
