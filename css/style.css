@@ -117,7 +117,8 @@ hr#hr-mobile {
         text-align: center;
         padding-left: 1.5rem;
         padding-top: 2rem;
-        width: 90%;
+        width: auto;
+        padding-right: 1.5rem;
         padding-bottom: 3rem;
     }
     .section-2 a {
