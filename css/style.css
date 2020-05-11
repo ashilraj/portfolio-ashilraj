@@ -195,4 +195,8 @@ hr#hr-mobile {
     .section-2 a {
         width: 100%;
     }
+    body:hover .section-1, body:hover .section-2 {
+        -webkit-animation: none;
+        -moz-animation: none;
+    }
 }
