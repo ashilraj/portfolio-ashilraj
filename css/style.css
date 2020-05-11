@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .grid-2{
-    display: grid;
+    display: block;
     grid-template-columns: repeat(2,1fr);
 }
 
@@ -13,6 +13,45 @@ body{
     background-color: #101214;
     color: #7A7C80;
 
+}
+
+body:hover .section-2 {
+    display: block; 
+    -webkit-animation: slide-down1 .3s ease-out;
+    -moz-animation: slide-down1 .3s ease-out;
+}
+
+body:hover .grid-2 {
+    display: grid; 
+    
+}
+
+body:hover .section-1 {
+    -webkit-animation: slide-down2 .3s ease-out;
+    -moz-animation: slide-down2 .3s ease-out;
+}
+
+@-webkit-keyframes slide-down1 {
+    0% { opacity: 0; -webkit-transform: translateX(-100%); }   
+  100% { opacity: 1; -webkit-transform: translateX(0); }
+}
+@-moz-keyframes slide-down1 {
+    0% { opacity: 0; -moz-transform: translateX(-100%); }   
+  100% { opacity: 1; -moz-transform: translateX(0); }
+}
+
+@-webkit-keyframes slide-down2 {
+    0% { opacity: 0; -webkit-transform: translateX(50%); }   
+  100% { opacity: 1; -webkit-transform: translateX(0); }
+}
+@-moz-keyframes slide-down2 {
+    0% { opacity: 0; -moz-transform: translateX(50%); }   
+  100% { opacity: 1; -moz-transform: translateX(0); }
+}
+
+body { 
+    opacity: 0; 
+    transition: opacity 5s; 
 }
 
 h2{
@@ -53,6 +92,7 @@ a{
 .section-2 {
     padding-top: 7vh;
     width: 80%;
+    display: none;
 }
 
 .section-2 h2{
@@ -106,6 +146,7 @@ hr#hr-mobile {
         display: block;
     }
     .grid-2{
+        display: grid;
         grid-template-columns: 1fr;
     }
     .section-1{
@@ -120,6 +161,7 @@ hr#hr-mobile {
         width: auto;
         padding-right: 1.5rem;
         padding-bottom: 3rem;
+        display: block;
     }
     .section-2 a {
         width: 100%;
