@@ -27,8 +27,8 @@ body:hover .grid-2 {
 }
 
 body:hover .section-1 {
-    -webkit-animation: slide-down2 .5s ease-out;
-    -moz-animation: slide-down2 .5s ease-out;
+    -webkit-animation: slide-down2 .3s ease-out;
+    -moz-animation: slide-down2 .3s ease-out;
 }
 
 @-webkit-keyframes slide-down1 {
