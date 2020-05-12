@@ -12,16 +12,16 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #101214;
     color: #7A7C80;
-
+    height: 100vh;
 }
 
 @-webkit-keyframes blinker1 {
     from {opacity: 1.0;}
-    to {opacity: 0.5;}
+    to {opacity: 0.3;}
   }
 
 @-webkit-keyframes blinker2 {
-    from {opacity: 0.5;}
+    from {opacity: 0.3;}
     to {opacity: 1.0;}
   }
   #code, #brush{
@@ -42,6 +42,9 @@ body{
     -webkit-animation-direction: alternate;
 }
 
+body:hover #brush, body:hover #code {
+    -webkit-animation-name: none;
+}
 
 body:hover .section-2 {
     display: block; 
@@ -173,14 +176,14 @@ hr#hr-mobile {
     hr#hr-mobile {
         margin-bottom: 2rem;
         display: block;
+        opacity: 0.06;
     }
     .grid-2{
         display: grid;
         grid-template-columns: 1fr;
     }
     .section-1{
-        padding:0;
-        padding-top: 5rem;
+        padding:auto;
     }
     .section-2{
         padding: 0;
@@ -190,7 +193,7 @@ hr#hr-mobile {
         width: auto;
         padding-right: 1.5rem;
         padding-bottom: 3rem;
-        display: block;
+        display: none;
     }
     .section-2 a {
         width: 100%;
@@ -198,5 +201,11 @@ hr#hr-mobile {
     body:hover .section-1, body:hover .section-2 {
         -webkit-animation: none;
         -moz-animation: none;
+    }
+    body:hover .section-2 {
+        display: none;
+    }
+    body:hover #brush, body:hover #code {
+        -webkit-animation-name: blinker1;
     }
 }
