@@ -42,6 +42,9 @@ body{
     -webkit-animation-direction: alternate;
 }
 
+body:hover #brush, body:hover #code {
+    -webkit-animation-name: none;
+}
 
 body:hover .section-2 {
     display: block; 
@@ -180,8 +183,7 @@ hr#hr-mobile {
         grid-template-columns: 1fr;
     }
     .section-1{
-        padding:0;
-        padding-top: 5rem;
+        padding:auto;
     }
     .section-2{
         padding: 0;
@@ -191,7 +193,7 @@ hr#hr-mobile {
         width: auto;
         padding-right: 1.5rem;
         padding-bottom: 3rem;
-        display: block;
+        display: none;
     }
     .section-2 a {
         width: 100%;
@@ -199,5 +201,11 @@ hr#hr-mobile {
     body:hover .section-1, body:hover .section-2 {
         -webkit-animation: none;
         -moz-animation: none;
+    }
+    body:hover .section-2 {
+        display: none;
+    }
+    body:hover #brush, body:hover #code {
+        -webkit-animation-name: blinker1;
     }
 }
